@@ -1,0 +1,47 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+应用配置文件
+"""
+
+# 应用信息
+APP_NAME = "声景校园"
+APP_VERSION = "1.0.0"
+APP_DESCRIPTION = "专为盲人大学生设计的无障碍校园导航应用"
+
+# 数据库配置
+DATABASE_NAME = "campus.db"
+DATABASE_PATH = "data/"
+
+# GPS配置
+GPS_UPDATE_INTERVAL = 5  # 秒
+GPS_ACCURACY_THRESHOLD = 50  # 米
+
+# OCR配置
+OCR_LANGUAGES = ['chi_sim', 'eng']  # 中文简体和英文
+OCR_CONFIDENCE_THRESHOLD = 60  # 置信度阈值
+OCR_AUTO_CAPTURE_INTERVAL = 3  # 秒
+
+# 语音配置
+DEFAULT_VOICE_RATE = 150
+DEFAULT_VOICE_VOLUME = 0.9
+
+# 导航配置
+ARRIVAL_THRESHOLD = 10  # 到达判定距离（米）
+INSTRUCTION_DISTANCE_THRESHOLD = 20  # 播报指令的距离阈值（米）
+
+# UI配置
+WINDOW_WIDTH = 800
+WINDOW_HEIGHT = 600
+BUTTON_HEIGHT = 80
+FONT_SIZE_LARGE = 32
+FONT_SIZE_MEDIUM = 20
+FONT_SIZE_SMALL = 16
+
+# 颜色配置
+COLOR_PRIMARY = (0.2, 0.6, 0.9, 1)
+COLOR_PRIMARY_HOVER = (0.3, 0.7, 1.0, 1)
+COLOR_TEXT_PRIMARY = (0.1, 0.1, 0.1, 1)
+COLOR_TEXT_SECONDARY = (0.3, 0.3, 0.3, 1)
+COLOR_BACKGROUND = (0.95, 0.95, 0.95, 1)
+COLOR_TEXT_ON_BUTTON = (1, 1, 1, 1)
